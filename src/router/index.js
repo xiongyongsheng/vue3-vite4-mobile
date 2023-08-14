@@ -33,8 +33,7 @@ router.beforeEach(async (to, from, next) => {
 router.beforeResolve((to) => {});
 
 router.afterEach((to) => {
-  document.title =
-    to.query._title || to.meta.title || import.meta.env.VITE_TITLE;
+  document.title = to.query._title || to.meta.title;
 });
 
 router.onError((error, to, from) => {});
