@@ -4,7 +4,6 @@ import {
   createWebHistory,
   START_LOCATION,
 } from "vue-router";
-import { wxAuth } from "@/utils";
 // import { useUserStore } from "@/pinia/user";
 
 const folder = import.meta.globEager("./modules/*.js");
